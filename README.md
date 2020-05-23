@@ -11,3 +11,5 @@
 2. src 폴더에 2개의 .ipynb 파일이 있습니다.  
 **Preprocessing.ipynb**: sample_accident를 전처리하는 코드입니다.   
 **ModelAnalysis.ipynb**: 전처리된 데이터를 통해 모델학습을 하는 코드입니다.
+
+3. push test
