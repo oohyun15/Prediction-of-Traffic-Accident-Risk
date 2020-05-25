@@ -14,13 +14,13 @@ Editor: seongminyoo
 + dtree : criterion, max_depth
 + RF    : n_estimators, criterion, max_depth
 + svc   : constraint C, gamma, kernel
-+ NN    : layer-size, activation func, alpha, learning rate
++ NN    : layer-size, activation func, alpha, learning rate   
 Modified at 2020-05-25 pm 16:41   
 Editor: dowoon  
 ***
 `Modify modelanalysis.ipynb file`
-1. add function for readability
-2. modify readme in jupyter file
-Modified at 2020-05-25 pm 04:56   
-Editor: seongminyoo
+1. add function for readability   
+2. modify readme in jupyter file   
+Modified at 2020-05-25 pm 04:56      
+Editor: seongminyoo   
 ***
