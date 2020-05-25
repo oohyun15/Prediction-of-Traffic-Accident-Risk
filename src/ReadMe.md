@@ -6,7 +6,7 @@
 + data processing   
 Modified at 2020-05-23 pm 11:03   
 Editor: seongminyoo   
-+++
+***
 `Modify modelanalysis.ipynb file`
 1. train test split percentage set
 2. TO DO list
@@ -17,9 +17,10 @@ Editor: seongminyoo
 + NN    : layer-size, activation func, alpha, learning rate
 Modified at 2020-05-25 pm 16:41   
 Editor: dowoon  
-+++
+***
 `Modify modelanalysis.ipynb file`
 1. add function for readability
 2. modify readme in jupyter file
 Modified at 2020-05-25 pm 04:56   
 Editor: seongminyoo
+***
