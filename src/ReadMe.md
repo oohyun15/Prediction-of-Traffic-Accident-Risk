@@ -26,7 +26,7 @@ Modified at 2020-05-25 pm 04:56
 Editor: seongminyoo   
 ***
 `Modify preprocessing.ipynb file`
-1. modify 'AgeBand' type
+1. modify 'AgeBand' type   
 `Modify modelanalysis.ipynb file`
 1. complete function 
 2. add hyper parameter set   
