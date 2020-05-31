@@ -6,14 +6,22 @@
 + data processing   
 Modified at 2020-05-23 pm 11:03   
 Editor: seongminyoo   
-
+***
 `Modify modelanalysis.ipynb file`
 1. train test split percentage set
 2. TO DO list
-+ knn   : n_neighbors, p
-+ dtree : criterion, max_depth
-+ RF    : n_estimators, criterion, max_depth
-+ svc   : constraint C, gamma, kernel
-+ NN    : layer-size, activation func, alpha, learning rate
++ knn   : n_neighbors(1000, 2000, 3000, 4000, 5000), p(1, 2)
++ dtree : criterion(entropy, gini), max_depth(5~20)
++ RF    : n_estimators(100, 1000, 2000), criterion(entropy, gini), max_depth(5~20)
++ svc   : constraint C(10-6, 10-4, 10-2, 1, 10^1), gamma(0.00001, 0.0001, 0.001, 0.01, 0.1, 1.0), kernel(poly, sigmoid, linear, rbf)
+
++ NN    : layer-size, activation func(relu), alpha, learning rate 
 Modified at 2020-05-25 pm 16:41   
 Editor: dowoon  
+***
+`Modify modelanalysis.ipynb file`
+1. add function for readability   
+2. modify readme in jupyter file   
+Modified at 2020-05-25 pm 04:56      
+Editor: seongminyoo   
+***
