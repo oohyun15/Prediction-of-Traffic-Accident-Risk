@@ -32,7 +32,7 @@ Editor: seongminyoo
 1. complete function 
 2. add hyper parameter set   
 3. debug using dummy data
-4. need neural network hyper parameters
-Modified at 2020-05-31 pm 11:20      
+4. need neural network hyper parameters   
+Modified at 2020-05-31 pm 11:20        
 Editor: seongminyoo
 ***
