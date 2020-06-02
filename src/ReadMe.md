@@ -36,3 +36,10 @@ Editor: seongminyoo
 Modified at 2020-05-31 pm 11:20        
 Editor: seongminyoo
 ***
+`Modify modelanalysis.ipynb file`
+1. extract target from data
+2. TO DO list
++ extract data.Type to array type
+Modified at 2020-06-02 pm 05:53   
+Editor: dowoon, seongmin
+***
