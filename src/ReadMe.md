@@ -41,5 +41,13 @@ Editor: seongminyoo
 2. TO DO list
 + extract data.Type to array type
 Modified at 2020-06-02 pm 05:53   
-Editor: dowoon, seongmin
+Editor: dowoon
+***
+`Modify modelanalysis.ipynb file`
+1. extract target from data
+2. TO DO list
++ extract data.Type to array type
++ change dataframe to array 
+Modified at 2020-06-04 am 11:53   
+Editor: dowoon
 ***
