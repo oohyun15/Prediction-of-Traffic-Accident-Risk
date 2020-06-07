@@ -24,6 +24,8 @@ from sklearn.model_selection import train_test_split
 
 preprocessing = pd.read_csv('../input/preprocessing.csv')
 
+preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
+
 data1 = preprocessing.loc[ : , "Time" : "Type"]
 data2 = preprocessing.loc[:, "AgeBand":"TargetOrigin"]
 data = pd.concat([data1,data2], axis = 1)
@@ -31,8 +33,9 @@ data = pd.concat([data1,data2], axis = 1)
 x = data[['Time', 'Day', 'Location','RoadState','Weather', 'RoadShape', 'Type', 'AgeBand']]
 y = data['TargetOrigin']
 
-x = x[:1000]
-y = y[:1000]
+x = x[:10000]
+y = y[:10000]
+
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 def execute_source(callback_imports, callback_name, callback_source, args):
