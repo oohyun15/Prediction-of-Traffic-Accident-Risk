@@ -22,19 +22,24 @@ import sklearn
 import warnings
 from sklearn.model_selection import train_test_split
 
-preprocessing = pd.read_csv('../input/preprocessing.csv')
+pre1 = pd.read_csv('../input/pre1.csv')
+pre2 = pd.read_csv('../input/pre2.csv')
+pre3 = pd.read_csv('../input/pre3.csv')
 
-preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
 
-y = preprocessing.loc[:, 'TargetOrigin' ]
-x = preprocessing.loc[:,'Location_East':]
+#pre1 = pre1.iloc[np.random.permutation(len(pre1))]
 
-x = x[:1000]
-y = y[:1000]
+Y2 = pre2.accident_severity.values
+Y1 = pre1.accident_severity.values
+Y3 = pre3.accident_severity.values
+
+X2 = pre2.loc[:, pre2.columns != 'accident_severity']
+X1 = pre1.loc[:, pre1.columns != 'accident_severity']
+X3 = pre3.loc[:, pre3.columns != 'accident_severity']
 
 from sklearn.model_selection import train_test_split
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
+x_train, x_test, y_train, y_test = train_test_split(X2, Y2, test_size=0.2)
 
 def execute_source(callback_imports, callback_name, callback_source, args):
     for callback_import in callback_imports:
