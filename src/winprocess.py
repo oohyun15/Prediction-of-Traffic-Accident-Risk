@@ -23,15 +23,12 @@ import warnings
 from sklearn.model_selection import train_test_split
 
 #3
-preprocessing = pd.read_csv('../input/final.csv')
+preprocessing = pd.read_csv('../input/final1.csv')
 
 preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
 
 y = preprocessing.loc[:, preprocessing.columns == '사고내용']
 x = preprocessing.loc[:, preprocessing.columns != '사고내용']
-
-x = x[:10000]
-y = y[:10000]
 
 from sklearn.model_selection import train_test_split
 
