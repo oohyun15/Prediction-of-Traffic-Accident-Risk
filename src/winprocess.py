@@ -24,7 +24,7 @@ import warnings
 from sklearn.model_selection import train_test_split
 
 #3
-preprocessing = pd.read_csv('../input/final1.csv')
+preprocessing = pd.read_csv('../input/finalres.csv')
 
 preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
 
