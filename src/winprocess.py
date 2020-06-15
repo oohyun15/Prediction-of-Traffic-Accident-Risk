@@ -10,6 +10,7 @@ from sklearn.ensemble import BaggingClassifier
 from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
+from sklearn.preprocessing import MinMaxScaler
 # dummy data for debug
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
@@ -29,6 +30,9 @@ preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
 
 y = preprocessing.loc[:, preprocessing.columns == '사고내용']
 x = preprocessing.loc[:, preprocessing.columns != '사고내용']
+
+x = x[:30000]
+y = y[:30000]
 
 from sklearn.model_selection import train_test_split
 
