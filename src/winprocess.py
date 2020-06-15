@@ -26,13 +26,11 @@ from sklearn.model_selection import train_test_split
 #3
 preprocessing = pd.read_csv('../input/finalres.csv')
 
-preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
+# preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
 
 y = preprocessing.loc[:, preprocessing.columns == '사고내용']
+y = y.astype('float')
 x = preprocessing.loc[:, preprocessing.columns != '사고내용']
-
-x = x[:10000]
-y = y[:10000]
 
 from sklearn.model_selection import train_test_split
 
