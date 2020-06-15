@@ -31,8 +31,8 @@ preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
 y = preprocessing.loc[:, preprocessing.columns == '사고내용']
 x = preprocessing.loc[:, preprocessing.columns != '사고내용']
 
-x = x[:30000]
-y = y[:30000]
+x = x[:10000]
+y = y[:10000]
 
 from sklearn.model_selection import train_test_split
 
