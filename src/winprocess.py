@@ -24,17 +24,23 @@ import warnings
 from sklearn.model_selection import train_test_split
 
 #3
-preprocessing = pd.read_csv('../input/finalres.csv')
+# preprocessing = pd.read_csv('../input/finalres.csv')
 
 # preprocessing = preprocessing.iloc[np.random.permutation(len(preprocessing))]
 
-y = preprocessing.loc[:, preprocessing.columns == '사고내용']
-y = y.astype('float')
-x = preprocessing.loc[:, preprocessing.columns != '사고내용']
+# y = preprocessing.loc[:, preprocessing.columns == '사고내용']
+# y = y.astype('float')
+# x = preprocessing.loc[:, preprocessing.columns != '사고내용']
+
+# x = x[:30000]
+# y = y[:30000]
+newx = pd.read_csv('../input/newx.csv')
+newy = pd.read_csv('../input/newy.csv')
+newy = newy.astype('float')
 
 from sklearn.model_selection import train_test_split
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
+x_train, x_test, y_train, y_test = train_test_split(newx, newy, test_size=0.2)
 
 def execute_source(callback_imports, callback_name, callback_source, args):
     for callback_import in callback_imports:
